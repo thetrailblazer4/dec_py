@@ -1,2 +1,9 @@
-git init
+git init 
 git status
+git add <file_name>
+#to add all
+	git add .
+
+git commit -m "Comment"
+git remote add origin <repo url>
+git push -u origin master
