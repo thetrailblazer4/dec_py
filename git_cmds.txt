@@ -1,9 +1,53 @@
-git init 
-git status
-git add <file_name>
-#to add all
-	git add .
+git init
 
-git commit -m "Comment"
-git remote add origin <repo url>
+git add <file>
+git add .
+git status
+git commit -m "add comment"
+git remote add origin <repo_url>
+
 git push -u origin master
+git config --global user.email 
+
+
+Git branch
+
+git branch <branch name>
+git checkout <branch name>
+git merge <branch name>
+git push -u origin MyNewBranch (To push the changes to repo)
+git branch -d <branch name> ---> delete from local
+git push origin --delete <branch name> ---> delete from remote
+
+
+Tags:
+
+Checkout the brnach where you want to create the tag:
+	- git checkout <branch name>
+
+
+Create tag with some name
+	- git tag <tag name>
+	- git tag -a v1.0 -m "version 1 of 1.0"
+
+Display/show tags
+	- git tag
+	- git show v1.0
+	- git tag -l "v1.*"
+
+Push tags to remote
+	- git push origin v1.0
+	- git push origin --tags
+	- git push --tags
+
+Delete
+	- git tag -d v1.0 (local)
+	- git push origin -d v1.0 v1.1
+
+create tag from the past commit
+	- git log
+	- git tag v1.2 <commit id>
+	- git push --tags
+
+
+
